@@ -1,0 +1,5 @@
+<ul class="list-inline book-list">
+  <li class="book-list-item" *ngFor="let book of books; let i = index">
+    <app-book [dataIsLoading]="true" [book]="book"(click)="goToBook(book.id)"></app-book>
+  </li>
+</ul>

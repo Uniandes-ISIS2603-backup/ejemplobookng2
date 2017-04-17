@@ -1,0 +1,5 @@
+<ul class="list-inline author-list">
+  <li class="author-list-item" *ngFor="let author of authors">
+    <app-author [isDataAvailable]="true" [author]="author" (click)="goToAuthor(author.id)"></app-author>
+  </li>
+</ul>

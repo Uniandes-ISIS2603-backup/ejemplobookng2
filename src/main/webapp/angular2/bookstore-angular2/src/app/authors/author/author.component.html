@@ -1,0 +1,21 @@
+<div *ngIf="isDataAvailable">
+  <div class="author row">
+    <div class="author-image-wrapper">
+      <img src="{{author.image}}" />
+    </div>
+    <div class="author-information-wrapper" [hidden]="!id">
+      <p>
+        <strong>{{author.name}}</strong>
+      </p>
+      <p>
+        <strong>Birth Date</strong>
+        {{author.birthdate | date:'dd/MM/yyyy'}}
+      </p>
+      <p>
+        <strong>Description</strong>
+        {{author.description}}
+      </p>
+    </div>
+  </div>
+  <app-book-list [books] = "author.book" [hidden]="!id"></app-book-list>
+</div>

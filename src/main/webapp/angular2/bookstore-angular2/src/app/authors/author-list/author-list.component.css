@@ -1,0 +1,12 @@
+.author-list .author-list-item img{
+  height: 300px;
+  width: 200px;
+  margin: 20px;
+}
+
+.author-list{
+  white-space: nowrap;
+  max-width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}

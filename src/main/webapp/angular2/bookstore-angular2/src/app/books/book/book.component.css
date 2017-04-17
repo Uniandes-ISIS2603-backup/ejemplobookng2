@@ -1,0 +1,31 @@
+.book {
+  padding: 20px;
+  border: solid 2px #D9D9D9;
+}
+
+.book-image-wrapper, .book-information-wrapper{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.book-information-wrapper[hidden]{
+  display: none;
+}
+
+.book-image-wrapper img{
+  width: 334px;
+  height: 500px;
+}
+
+.book-information-wrapper{
+  padding-left: 20px;
+}
+
+.book-information-wrapper p{
+  padding-bottom: 20px;
+  border-bottom: solid 1px #D9D9D9;
+}
+
+.book-information-wrapper p strong{
+  display: block;
+}

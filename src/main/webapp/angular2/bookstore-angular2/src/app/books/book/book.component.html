@@ -1,0 +1,22 @@
+<div class="book row" *ngIf="book">
+  <div class="book-image-wrapper">
+    <img src="{{book.image}}" />
+  </div>
+  <div class="book-information-wrapper" [hidden]="dataIsLoading">
+    <p>
+      <strong>{{book.name}}</strong>
+    </p>
+    <p>
+      <strong>Publish Date</strong>
+      {{book.publishdate | date:'dd/MM/yyyy'}}
+    </p>
+    <p>
+      <strong>Editorial</strong>
+      {{book.editorial.name}}
+    </p>
+    <p>
+      <strong>Description</strong>
+      {{book.description}}
+    </p>
+  </div>
+</div>

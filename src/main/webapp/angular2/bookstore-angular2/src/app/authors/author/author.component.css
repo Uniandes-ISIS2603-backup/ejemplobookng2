@@ -1,0 +1,32 @@
+.author {
+  padding: 20px;
+  border: solid 2px #D9D9D9;
+}
+
+.author-image-wrapper, .author-information-wrapper{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.author-information-wrapper[hidden]{
+  display: none;
+}
+
+.author-image-wrapper img{
+  width: 334px;
+  height: 250px;
+}
+
+.author-information-wrapper{
+  max-width: 500px;
+  padding-left: 20px;
+}
+
+.author-information-wrapper p{
+  padding-bottom: 20px;
+  border-bottom: solid 1px #D9D9D9;
+}
+
+.author-information-wrapper p strong{
+  display: block;
+}
